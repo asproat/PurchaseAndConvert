@@ -13,8 +13,9 @@ class Item
     var itemName : String!
     var itemPrice : Float!
     var itemUnit : String!
+    var itemCount : Int = 0
     
-    func Item(name: String, price: Float, unit: String)
+    init(name: String, price: Float, unit: String)
     {
         itemName = name
         itemPrice = price

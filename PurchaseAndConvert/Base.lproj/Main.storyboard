@@ -47,7 +47,7 @@
                                 <rect key="frame" x="0.0" y="133" width="375" height="534"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="4tI-L4-mcP" customClass="ItemTableViewCell" customModule="PurchaseAndConvert" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="79" id="4tI-L4-mcP" customClass="ItemTableViewCell" customModule="PurchaseAndConvert" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4tI-L4-mcP" id="rg1-7B-Vp8">
@@ -99,6 +99,9 @@
                                                         <constraint firstAttribute="height" constant="29" id="AQs-wd-WTC"/>
                                                         <constraint firstAttribute="width" constant="94" id="mfO-bd-5As"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="stepperChange:" destination="4tI-L4-mcP" eventType="valueChanged" id="1cm-qc-OWD"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -116,6 +119,12 @@
                                                 <constraint firstItem="xrv-or-ff4" firstAttribute="top" secondItem="rg1-7B-Vp8" secondAttribute="topMargin" id="vuX-1e-P6l"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemName" destination="xrv-or-ff4" id="L8T-0g-wVl"/>
+                                            <outlet property="itemPrice" destination="G4K-c1-DQA" id="kMr-ld-dNT"/>
+                                            <outlet property="itemQuantity" destination="FYA-2v-3hH" id="DJg-DW-ge3"/>
+                                            <outlet property="itemUnit" destination="Ep4-72-aR2" id="3Ay-Jw-te6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -127,7 +136,7 @@
                                 </constraints>
                                 <state key="normal" title="Convert"/>
                                 <connections>
-                                    <segue destination="xX7-XD-pHV" kind="show" id="zkZ-I2-f8r"/>
+                                    <segue destination="xX7-XD-pHV" kind="show" identifier="currencySegue" id="zkZ-I2-f8r"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -151,6 +160,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="gdV-bF-tv5"/>
+                    <connections>
+                        <outlet property="tableVIew" destination="8bh-IL-Gcm" id="CHU-HL-CwF"/>
+                        <outlet property="totalLabel" destination="ytn-nd-lC9" id="Fne-8D-AQr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -168,7 +181,7 @@
                                 <rect key="frame" x="0.0" y="152" width="375" height="515"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurrencyCell" id="QvI-PB-lqZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="currencyCell" id="QvI-PB-lqZ">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QvI-PB-lqZ" id="sCM-gk-4lA">
@@ -200,6 +213,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sCf-fY-BE2"/>
                     </view>
+                    <connections>
+                        <outlet property="convertedTotal" destination="IoY-nd-u9r" id="H9A-Si-ht9"/>
+                        <outlet property="tableView" destination="le6-zt-297" id="C2V-Oh-jUJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8s7-QY-l0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

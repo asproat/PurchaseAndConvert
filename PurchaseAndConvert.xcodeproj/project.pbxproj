@@ -16,6 +16,7 @@
 		D2FEFA6221E1283A00C60590 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEFA6121E1283A00C60590 /* ItemTableViewCell.swift */; };
 		D2FEFA6421E1286D00C60590 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEFA6321E1286D00C60590 /* CurrencyViewController.swift */; };
 		D2FEFA6621E129B400C60590 /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEFA6521E129B400C60590 /* ItemClass.swift */; };
+		D2FEFA6821E12AF000C60590 /* CurrencyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEFA6721E12AF000C60590 /* CurrencyStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D2FEFA6121E1283A00C60590 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		D2FEFA6321E1286D00C60590 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		D2FEFA6521E129B400C60590 /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
+		D2FEFA6721E12AF000C60590 /* CurrencyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				D2FEFA6121E1283A00C60590 /* ItemTableViewCell.swift */,
 				D2FEFA6321E1286D00C60590 /* CurrencyViewController.swift */,
 				D2FEFA6521E129B400C60590 /* ItemClass.swift */,
+				D2FEFA6721E12AF000C60590 /* CurrencyStruct.swift */,
 			);
 			path = PurchaseAndConvert;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				D2FEFA6221E1283A00C60590 /* ItemTableViewCell.swift in Sources */,
 				D2FEFA6621E129B400C60590 /* ItemClass.swift in Sources */,
+				D2FEFA6821E12AF000C60590 /* CurrencyStruct.swift in Sources */,
 				D2FEFA4F21E1223800C60590 /* ViewController.swift in Sources */,
 				D2FEFA4D21E1223800C60590 /* AppDelegate.swift in Sources */,
 				D2FEFA5521E1223800C60590 /* PurchaseAndConvert.xcdatamodeld in Sources */,
